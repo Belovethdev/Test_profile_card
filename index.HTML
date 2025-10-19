@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./style.CSS">
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+    <div class="card-header">
+      <img src="image/Logo.png" alt="">
+      <h1>TEST PROFILE CARD</h1>
+      
+    </div>
+
+    <div class="card-body">
+      <figure class="avatar">
+        <img 
+          src="/image/New1.jpg" 
+          alt="Profile Picture" 
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="user-info">
+        <h2 data-testid="test-user-name">Ayanfeoluwa Popola</h2>
+        <p data-testid="test-user-bio">
+          I am a Frontend developer who loves solving real-world problems through clean, efficient code, building fast, responsive, and user-focused websites with a strong eye for structure, accessibility, and performance.
+        </p>
+
+        <p class="time">
+          Current Time (ms): 
+          <span data-testid="test-user-time" id="time"></span>
+        </p>
+
+        <div class="lists">
+          <section>
+            <h3>HOBBIES</h3>
+            <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Playing Saxophone</li>
+          <li>Watching Movies</li>
+          <li>Playing Games</li>
+          <li>Solving Real-World Problems</li>
+        </ul>
+          </section>
+
+          <section class="dis">
+            <h3>DISLIKES</h3>
+            <ul data-testid="test-user-dislikes">
+          <li>Procrastination</li>
+          <li>Unreliable Internet</li>
+        </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+  <p>Connect with me :</p>
+  <nav data-testid="test-user-social-links" class="social-links">
+    <a
+      href="https://www.linkedin.com/in/oluwagbemigapopoola"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-testid="test-user-social-linkedin"
+      aria-label="LinkedIn"
+    >
+      <div class="social-icon">
+        <img src="image/linkedin.png" alt="LinkedIn" />
+      </div>
+    </a>
+
+    <a
+      href="https://github.com/Belovethdev"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-testid="test-user-social-github"
+      aria-label="GitHub"
+    >
+      <div class="social-icon">
+        <img src="image/github.png" alt="GitHub" />
+      </div>
+    </a>
+  </nav>
+</footer>
+
+
+  </article>
+    <script src="./script.js"></script>
+</body>
+</html>
